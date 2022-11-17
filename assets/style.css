@@ -1,0 +1,260 @@
+/*--Universal Selector also removing default CSS styling*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Psuedo Class to get help with redundancy*/
+:root {
+  --textcolor: #fff;
+  --font-family: Helvetica, Arial, sans-serif;
+  --color1: #31343d;
+  --color2: #92ccce;
+  --color3: #445877;
+  --color4: #eeeef7;
+}
+
+/*--Header Styling*/
+section {
+  font-family: var(--font-family);
+  background-color: var(--color4);
+}
+
+header {
+  font-family: var(--font-family);
+  background-color: var(--color1);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 5px;
+}
+
+header h1 {
+  font-size: 30px;
+  font-weight: bold;
+  border: solid;
+  border-color: var(--color2);
+  border-left-width: 50px;
+  background-color: var(--color2);
+  display: flex;
+  align-items: center;
+  color: var(--color1);
+}
+
+header a {
+  text-decoration: underline;
+  color: var(--color2);
+  text-underline-offset: 3px;
+}
+
+header nav {
+  margin: 20px;
+  height: 15px;
+}
+
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+}
+
+header nav ul li a {
+  padding: 8px;
+  font-size: 16px;
+  margin: 10px 10px 0 0;
+  font-weight: bold;
+}
+
+/*--Title Styling */
+.title {
+  font-family: var(--font-family);
+  border-right: 4px solid var(--color3);
+  min-height: 100%;
+  text-align: right;
+  padding-right: 10px;
+  min-width: 20%;
+  max-width: 20%;
+}
+
+.title h2 {
+  font-size: 36px;
+  font-weight: 500;
+  color: var(--color3);
+}
+
+/*--Class Selectors */
+/* Banner Image Styling */
+.banner {
+  background-image: url("./images/banner.jpg");
+  height: 200px;
+  background-size: cover;
+  background-position: 60% 40%;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.banner img {
+  height: 400px;
+}
+
+.banner .subtitle {
+  font-size: 25px;
+  display: flex;
+  justify-content: end;
+  text-align: left;
+  font-weight: bold;
+  background-color: var(--color2);
+  color: var(--color1);
+  padding: 10px;
+  margin: 120px 80px 0 0;
+}
+
+/* About Me Section */
+.about-me {
+  font-family: var(--font-family);
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  padding-top: 30px;
+}
+
+.about-me p {
+  font-size: 12px;
+  padding: 0 50px;
+  line-height: 1.6;
+  width: 100%;
+}
+
+/* Work Section -- had to look up online for grid wrapping*/
+.work {
+  font-family: var(--font-family);
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.work h2 {
+  font-size: 36px;
+  font-weight: 500;
+  color: var(--color3);
+}
+
+.projects-grid-box {
+  width: 90%;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+}
+
+.projects-grid {
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.project {
+  font-family: var(--font-family);
+  border: solid;
+  border-color: var(--color2);
+  color: var(--color1);
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.7;
+}
+
+.project-title {
+  background-color: var(--color2);
+  color: var(--color1);
+  padding: 10px;
+  font-size: 14px;
+  margin-bottom: 15px;
+  opacity: 1.0;
+}
+
+.project-title p {
+  font-size: 11px;
+  margin-top: 5px;
+}
+
+.project:hover {
+  opacity: 1.0;
+}
+
+.surf-report {
+  grid-column: 1/3;
+  grid-row: span 2;
+  background-image: url("./images/surf-report.jpg");
+}
+
+.led-wall {
+  background-image: url("./images/led-wall.jpg");
+  background-position: 50% 30%;
+}
+
+.calculator {
+  background-image: url("./images/calculator.jpg");
+  background-position: 60% 40%;
+}
+
+.pastel-puzzels {
+  background-image: url("./images/pastel-puzzels.jpg");
+  background-position: 60% 40%;
+}
+
+.run-buddy {
+  background-image: url("./images/run-buddy.jpg");
+  background-position: 60% 20%;
+}
+
+/* Contact Me/Footer Styling */
+footer {
+  font-family: var(--font-family);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: var(--color4);
+}
+
+.footer-content {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#footer-list {
+  width: 100%;
+  text-decoration: underline;
+  color: var(--background);
+  text-underline-offset: 3px;
+}
+
+footer ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: center;
+  font-size: 13px;
+}
+
+footer ul li {
+  font-weight: bold;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: var(--color3);
+  padding: 8px;
+  font-weight: bold;
+}
