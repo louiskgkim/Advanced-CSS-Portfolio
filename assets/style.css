@@ -258,3 +258,83 @@ footer ul li a {
   padding: 8px;
   font-weight: bold;
 }
+
+/* When the browser is at max 575px and below*/
+/* Forgot about this so didn't have time to correct this in time */
+@media screen and (max-width: 575px) {
+  header {
+    font-size: 12px;
+    justify-content: row-reverse;
+  }
+
+  header h1 {
+    font-size: 20px;
+  }
+
+  header nav ul {
+    display: flex;
+    margin-left: 40px;
+  }
+
+  header nav ul li a {
+    font-size: 10px;
+  }
+
+  .banner {
+    height: 150px;
+  }
+
+  .banner .subtitle {
+    font-size: 16px;
+    padding: 8px;
+    margin: 90px 15px 0 0;
+  }
+
+  .about-me {
+    flex-direction: column;
+  }
+
+  .title {
+    border-right: none;
+    text-align: center;
+    min-width: 100%;
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .title h2 {
+    font-size: 20px;
+    justify-content: center;
+  }
+
+  .about-me p {
+    font-size: 10px;
+    line-height: 1.6;
+    width: 100%;
+    padding: 15px;
+  }
+
+  .work {
+    flex-direction: column;
+  }
+
+  .project-title p {
+    font-size: 8px;
+    margin-top: 5px;
+  }
+
+  .project-title h3 {
+    font-size: 12px;
+  }
+
+  footer ul li {
+    padding: 8px;
+  }
+
+  .footer-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
