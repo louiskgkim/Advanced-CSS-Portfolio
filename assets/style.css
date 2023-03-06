@@ -194,9 +194,9 @@ header nav ul li a {
   background-image: url("./images/Starter-Page.png");
 }
 
-.led-wall {
-  background-image: url("./images/led-wall.jpg");
-  background-position: 50% 30%;
+.cheers-check {
+  background-image: url("./images/cheerscheck.png");
+  background-position: 50% 55%;
 }
 
 .calculator {
